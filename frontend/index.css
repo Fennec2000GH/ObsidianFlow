@@ -1,0 +1,35 @@
+
+/* animations */
+@keyframes animate-form {
+    0% { background-color: red; }
+    25% { background-color: violet; }
+    50% {background-color: magenta; }
+    75% { background-color: purple; }
+    100% { background-color: indigo; }
+}
+
+
+body {
+    background-color: indigo;
+    padding: 10px 10px 10px 10px;
+}
+
+form {
+    border: 4px solid purple;
+    padding: 4px 4px 4px 4px;
+
+    animation-name: animate-form;
+    animation-direction: alternate;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+button {
+    background-color: lime;
+}
+
+#menu {
+    background-color: midnightblue;
+    width: 10%;
+    padding: 0px 4px 4px 4px;
+}
