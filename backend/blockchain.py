@@ -6,8 +6,9 @@ from sys import exit
 
 alice, bob = generate_keypair(), generate_keypair()
 
-bdb_root_url = 'https://example.com:9984'  # Use YOUR BigchainDB Root URL here
+# bdb_root_url = 'https://example.com:9984'  # Use YOUR BigchainDB Root URL here
 
+bdb_root_url = 'https://test.ipdb.io'
 bdb = BigchainDB(bdb_root_url)
 
 bicycle_asset = {
