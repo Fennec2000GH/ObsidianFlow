@@ -1,4 +1,5 @@
 
+<!DOCTYPE html>
 <html>
 <title> Profile </title>
 <head>
@@ -15,17 +16,30 @@
     <link rel="stylesheet" href="node_modules/octicons/build/font/octicons.css">
 
     <meta charset="utf-8">
-    <link rel="stylesheet" href="../index.css">
-    <div class="container">
-        <div class="jumbotron">
-            <h1> Welcome to your profile, {{first_name}} </h1>
-        </div>
-        <p> You can update any settings here. </p>
-        <p> Or improve the outlook of your profile. </p>
+    <link rel="stylesheet" href="./profile.css">
+
+    <!-- Jumobtron Heading -->
+    <div class="heading">
+        <h1 id="welcome"> Welcome to your profile, Player! </h1>
+        <div class="well"> <p class="subtext"> You can update any settings here. </p> </div>
+        <div class="well"> <p class="subtext"> Or improve the outlook of your profile. </p> </div>
     </div>
 
+    <!-- Photo and Bio -->
+    <div id="pfp_card" class="card bg-important">
+        <div class="card-header"> 
+            <img id="pfp_photo" src="../assets/images/homer-simpson.png">
+        </div>
+        <div class="card-body">
+            <h2> Bio </h2>
+            <h3> I love donuts!!! </h3>
+        </div>
+        <div class="card-footer">
+
+        </div>
+
     <!-- Profile Settings -->
-    <div id="profile_settings" class="card bg-primary text-white">
+    <div id="profile_settings" class="card bg-primary">
         <div class="card-header"> Profile Settings </div>
         <div class="card-body">
             <p> <img src="../node_modules/@primer/octicons/build/build/svg/mail-24.svg"> Email: </p>
@@ -38,24 +52,17 @@
         <div class="card-footer">
             <button id="profile_button"><img src="../node_modules/@primer/octicons/build/build/svg/codescan-checkmark-24.svg"> Save </button>
         </div>
+
     </div>
 
-    <div id="pfp" class="card bg-important text-white">
-        <div class="card-header"> 
-            <img src="../assets/images/homer-simpson.png">
-        </div>
-        <div class="card-content">
-            <h3> Bio </h3>
-            <p> I love donutsss!!! </p>
-        </div>
-        <div class="card-footer">
+    
             
         </div>
     </div>
 </head>
 
 <body>
-
+    
 </body>
 
 </html>
