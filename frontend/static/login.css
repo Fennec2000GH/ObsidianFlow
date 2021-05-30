@@ -1,0 +1,111 @@
+
+
+/* animations */
+@keyframes animate-pane {
+    0% { background-color: red; }
+    25% { background-color: violet; }
+    50% {background-color: magenta; }
+    75% { background-color: purple; }
+    100% { background-color: indigo; }
+}
+
+
+
+body {
+    background-image: url("../assets/images/obsidian.png");
+    background-color: indigo;
+    margin: auto;
+    position: relative;
+}
+
+form {
+    width: 100%;
+}
+
+h1 {
+    margin: auto;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    font-size: 32px;
+    font-family: fantasy;
+    color:lime;
+}    
+
+input {
+    background-color: lightskyblue;
+    width: 100%;
+}
+
+p {
+    font-family: fantasy;
+    font-size: 12px;
+    font-weight: bolder;
+    width: 100%;
+} 
+
+.card-header {
+    text-align: center;
+}
+
+.box {
+    border: 4px solid purple;
+    margin: 120px 4px 4px 4px;
+
+    animation-name: animate-pane;
+    animation-direction: alternate;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.box{  
+    width: 320px;
+    height: 450px;
+    color: #fff;
+    top:20%;
+    left:36%;
+    position:absolute;
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+
+.box input[type="text"], input[type="password"]{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline:none;
+    height:40px;
+    color:#fff;
+    font-size:16px;
+}
+
+.box input[type="submit"] {
+    background-color: lime;
+    border: none;
+    color: rebeccapurple;
+    outline:none;
+    height:40px;  
+    border-radius:20px;
+}
+
+.box input[type="submit"]:hover{
+    cursor:pointer;
+    background:#ffc107;
+    color:#000;
+}
+
+.box a {   
+    text-decoration:none;
+    font-size:12px;
+    line-height:20px;
+    color: goldenrod;
+}
+
+.box a:hover {  
+    color:skyblue;
+}
+
+ .active{
+    color:#fff;
+    background:#e02626;
+    border-radius:4px;
+} 

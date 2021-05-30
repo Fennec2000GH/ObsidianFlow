@@ -20,6 +20,32 @@ iframe {
     width: 100%;
 }
 
+h3 {
+    color: lightgrey;
+    font-family: fantasy;
+    font-size: 120px;
+    font-weight: bolder;
+    opacity: 75%;
+}
+
+h3:hover {
+    color:darkgrey;
+    opacity: 100%;
+}
+
+p {
+    color:skyblue;
+    font-family: fantasy;
+    font-size: 60px;
+    font-weight: bold;
+    opacity: 75%;
+}
+
+p:hover {
+    color:blue;
+    opacity: 100%;
+}
+
 .carousel-inner > .carousel-item > img {
     width: 100%;
 }
