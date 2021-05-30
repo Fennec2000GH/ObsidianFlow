@@ -20,6 +20,10 @@ iframe {
     width: 100%;
 }
 
+h1, h2 {
+    color: lime;
+}
+
 h3 {
     color: lightgrey;
     font-family: fantasy;
@@ -50,7 +54,7 @@ p:hover {
     width: 100%;
 }
 
-.heading {
+.animated {
     border: 4px solid purple;
     margin: 4px 4px 4px 4px;
 

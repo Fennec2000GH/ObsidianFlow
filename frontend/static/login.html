@@ -14,20 +14,33 @@
 </head>
 <body>
 
-
     <div class="box card">
 
         <h1> Login Here </h1>
 
         <form>
             <p> 📛 Username </p>
-            <input class="" type="text" name="" placeholder="Username">
+            <input type="text" name="" placeholder="Username">
             <p> 🔑 Password </p>
-            <input class="" type="password" name="" placeholder="Password"><br>
+            <input type="password" name="" placeholder="Password"><br>
             <input type="submit" name="" value="Login" onclick="login()"></a>
             <a href="./register.html"><p> New user? Register here. </p></a>
+            <a href="../index.html"><p> Back to home base! </p></a>
         </form>
 
     </div>
+
+    <script>
+        function login() {
+            var login_label = document.querySelector("h1");
+            login_label.insertAdjacentHTML(
+                "afterend",
+                `<div class="alert alert-success alert-dismissible">
+                            <button type="button" class="close" data-dismiss="alert">&times;</button>
+                            <strong> Successfully logged in! </strong>
+                        </div>`
+            );
+        }
+    </script>
 </body>
 </html>

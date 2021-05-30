@@ -1,4 +1,25 @@
+
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+
+
+/* animations */
+@keyframes animate-pane {
+  0% { background-color: red; }
+  25% { background-color: violet; }
+  50% {background-color: magenta; }
+  75% { background-color: purple; }
+  100% { background-color: indigo; }
+}
+
+.animated {
+  border: 4px solid purple;
+  margin: 4px 4px 4px 4px;
+
+  animation-name: animate-pane;
+  animation-direction: alternate;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
 
 body {
   overflow-x: hidden;
@@ -32,7 +53,7 @@ body {
   height: 100%;
   margin-left: -250px;
   overflow-y: auto;
-  background: #37474F;
+  background-color: blueviolet;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
@@ -47,8 +68,11 @@ body {
 }
 
 #sidebar header a {
-  color: #fff;
+  color: lime;
   display: block;
+  font-family: fantasy;
+  font-size: 36px;
+  font-weight: bolder;
   text-decoration: none;
 }
 
@@ -56,8 +80,8 @@ body {
   color: #fff;
 }
 
-#sidebar .nav{
-  
+#sidebar ul li:hover {
+  background-color: purple;
 }
 
 #sidebar .nav a{
@@ -77,6 +101,10 @@ body {
   margin-right: 16px;
 }
 
+#current {
+  background-color: green;
+}
+
 .main{
   max-width: 1200px;
   margin: 0 auto;
@@ -91,6 +119,13 @@ img {
   height: 300px;
   width: 100%;
   vertical-align: middle;
+}
+
+li {
+  color:mediumseagreen;
+  font-family: fantasy;
+  font-size: 36px;
+  font-weight: bolder;
 }
 
 .btn {
@@ -169,3 +204,4 @@ img {
   margin-top: 35px;
   text-align: center;
 }
+

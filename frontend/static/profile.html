@@ -27,7 +27,7 @@
     <!-- Photo and Bio -->
     <div id="pfp_card" class="card bg-important">
         <div class="card-header"> 
-            <img id="pfp_photo" src="../assets/images/homer-simpson.png">
+            <img id="pfp_photo" src="https://imagesvc.meredithcorp.io/v3/mm/image?q=85&c=sc&poi=face&w=2000&h=1000&url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F6%2F2018%2F08%2Fsimp_homersingle08_f_hires2-2000.jpg">
         </div>
         <div class="card-body">
             <h2> Bio </h2>
@@ -49,19 +49,44 @@
             <textarea placeholder="Enter email address..."> </textarea>
         </div>
         <div class="card-footer">
-            <button id="profile_button"><img src="../node_modules/@primer/octicons/build/build/svg/codescan-checkmark-24.svg"> Save </button>
+            <button id="profile_button" onclick="save()"><img src="../node_modules/@primer/octicons/build/build/svg/codescan-checkmark-24.svg" onclick="save()"> Save </button>
         </div>
-
     </div>
-
     
-            
-        </div>
-    </div>
 </head>
 
 <body>
-    
+
+    <script>
+        function save() {
+            var save_button = document.querySelector("#profile_button");
+            save_button.insertAdjacentHTML(
+                "beforebegin",
+                `<div class="alert alert-success alert-dismissible">
+                            <button type="button" class="close" data-dismiss="alert">&times;</button>
+                            <strong> Changes saved! </strong>
+                        </div>`,
+                null
+            );
+        }
+
+        dropContainer.ondragover = dropContainer.ondragenter = function(evt) {
+            evt.preventDefault();
+        };
+
+dropContainer.ondrop = function(evt) {
+  // pretty simple -- but not for IE :(
+  fileInput.files = evt.dataTransfer.files;
+
+  // If you want to use some of the dropped files
+  const dT = new DataTransfer();
+  dT.items.add(evt.dataTransfer.files[0]);
+  dT.items.add(evt.dataTransfer.files[3]);
+  fileInput.files = dT.files;
+
+  evt.preventDefault();
+};
+    </script>
 </body>
 
 </html>
